@@ -1,0 +1,47 @@
+.footer {
+    .menus {
+        padding: 50px 0;
+        // display: flex;
+        justify-content: space-between;
+        // align-items: flex-start;
+        .row-flex();
+    }
+
+    .menus__wrapper {
+        display: flex;
+        justify-content: space-around;
+        // align-items: flex-start;
+    }
+
+    .menu {
+        &__title {
+            .title(20px);
+            .title-under(40px, 4px, -10px, 6px);
+            margin-bottom: 18px;
+        }
+
+        &__list {
+            a {
+                display: block;
+                padding: 7px 0;
+                font-size: 16px;
+                .link-active();
+            }
+        }
+
+        &-1 {
+            .col();
+            .size(3);
+        }
+
+        &-2 {
+            .col();
+            .size(6);
+        }
+
+        &-3 {
+            .col();
+            .size(3);
+        }
+    }
+}

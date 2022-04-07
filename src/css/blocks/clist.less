@@ -1,0 +1,38 @@
+.сlist {
+
+    &__item {
+        padding-top: 20px;
+        padding-bottom: 43px;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: #9B9B9B;
+            border-radius: 5px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 39px;
+        font-family: 'Calibri';
+        font-weight: 700;
+        text-transform: uppercase;
+        max-width: 350px;
+    }
+
+    &__text {
+        color: @grey;
+        line-height: 32px;
+        max-width: 660px;
+    }
+}
