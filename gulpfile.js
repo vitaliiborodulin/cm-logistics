@@ -77,7 +77,7 @@ function grid(done) {
 }
 
 function deploy(done) {
-	ghPages.publish(path.join(process.cwd(), './dist/'), done);
+	ghPages.publish(path.join(process.cwd(), './build/'), done);
 }
 
 let build = gulp.parallel(html, styles, images, fonts);
@@ -87,3 +87,4 @@ let dev = gulp.series(buildWithClean, watch);
 gulp.task('build', buildWithClean);
 gulp.task('watch', dev);
 gulp.task('grid', grid);
+gulp.task('deploy', deploy);

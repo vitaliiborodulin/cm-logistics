@@ -1,0 +1,37 @@
+.partners {
+    padding-top: 180px;
+    padding-bottom: 450px;
+
+    .md-block({
+        padding-top: 120px;
+        padding-bottom: 265px;
+    });
+
+    .xs-block({
+        padding-top: 80px;
+        padding-bottom: 174px;
+    });
+
+    .section-title {
+        margin-bottom: 100px;
+        .md(margin-bottom, 80px);
+        .xs(margin-bottom, 54px);
+    }
+
+    &__list {
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 224px;
+        margin-bottom: 30px;
+        margin-right: 45px;
+
+        .xs-block({
+            max-width: 115px;
+            margin-right: 18px;
+        });
+    }
+}

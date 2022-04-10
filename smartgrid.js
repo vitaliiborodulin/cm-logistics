@@ -3,33 +3,22 @@ module.exports = {
 	offset: "30px",
 	container: {
 		maxWidth: "1170px",
-		fields: "30px"
+		fields: "30px" // Внимание! fields обязан быть >= offset / 2
 	},
 	breakPoints: {
 		md: {
 			width: "900px"
 		},
 		sm: {
-			width: "720px",
+			width: "768px",
 			fields: "24px"
 		},
 		xs: {
 			width: "576px",
-			/*
-			offset: "5px",
-			fields: "5px"
-			*/
 		},
 		xxs: {
-			width: "290px",
+			width: "320px",
 			fields: "15px"
 		}
-	},
-	mobileFirst: false,
-	tab: '\t',
-	/*
-	mixinNames: {
-		  container: 'container'
-	},
-	detailedCalc: true*/
+	}
 }

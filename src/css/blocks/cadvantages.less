@@ -1,0 +1,92 @@
+.cadvantages {
+    padding-top: 120px;
+    padding-bottom: 70px;
+
+    .md-block({
+        padding-top: 87px;
+        padding-bottom: 65px;
+    });
+
+    .xs-block({
+        padding-top: 44px;
+        padding-bottom: 60px;
+    });
+
+    &__list {
+        .row-flex();
+    }
+
+    &__item {
+        .col();
+        .size(6);
+        .size-xs(12);
+
+        position: relative;
+        margin-bottom: 50px;
+        padding-left: 90px;
+        color: @grey;
+
+        .md-block({
+            margin-bottom: 35px;
+            padding-left: 62px;
+        });
+
+        .xs-block({
+            margin-bottom: 20px;
+            padding-left: 50px;
+        });
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 72px;
+            height: 60px;
+
+            .md-block({
+                width: 48px;
+                height: 40px;
+            });
+
+            .xs-block({
+                width: 36px;
+                height: 30px;
+            });
+        }
+
+        &:nth-child(1)::before {
+            background: url(../img/cadv-1.svg) no-repeat top left;
+        }
+
+        &:nth-child(2)::before {
+            background: url(../img/cadv-2.svg) no-repeat top left;
+        }
+
+        &:nth-child(3)::before {
+            background: url(../img/cadv-3.svg) no-repeat top left;
+        }
+
+        &:nth-child(4)::before {
+            background: url(../img/cadv-4.svg) no-repeat top left;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        .title(30px);
+        .md-block({
+            margin-bottom: 17px;
+            .title(20px);
+        });
+        .xs-block({
+            margin-bottom: 14px;
+            .title(16px);
+        });
+    }
+
+    &__text {
+        .md(font-size, 14px);
+        .md(font-size, 12px);
+    }
+}

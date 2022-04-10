@@ -4,6 +4,7 @@
 @black: #1E2024;
 @grey: #555555;
 @grey_light: #9B9B9B;
+@grey_light1: #F9F9F9;
 @grey_light2: #F3F3F3;
 @grey_light3: #ECECEC;
 
@@ -53,8 +54,29 @@
 body {
     font-family: @userfont;
     font-size: @fontsize;
+    .md(font-size, 16px);
+    .xs(font-size, 14px);
     line-height: @lineheight;
     font-weight: 400;
     color: @black;
     text-rendering: optimizeSpeed;
+}
+
+.bg-grey {
+    background-color: @grey_light1;
+}
+
+.section-title {
+    .title(55px);
+    .title-under(100px, 6px, -15px, 5px);
+
+    .md-block({
+        .title(30px);
+        .title-under(80px, 5px, -15px, 5px); 
+    });
+
+    .xs-block({
+        .title(20px);
+        .title-under(60px, 4px, -10px, 5px);
+    })
 }

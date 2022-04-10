@@ -1,12 +1,38 @@
 .cmore {
     background: linear-gradient(93.03deg, #FCFBFA 0.25%, #EFF1F3 100%);
     border-radius: 15px;
-    height: 262px;
+    text-align: center;
+    
+    &__link {
+        display: block;
+        padding-top: 94px;
+        padding-bottom: 97px;
+        border-radius: 15px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        .md-block({
+            padding-top: 67px;
+            padding-bottom: 70px;
+            border-radius: 10px;
+        });
+
+        .xs-block({
+            padding-top: 30px;
+            padding-bottom: 34px;
+            border-radius: 5px;
+        });
+        
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+
+        &:hover {
+            border-color: @accent;
+
+            .cmore__title {
+                color: @accent;
+            }
+        }
+    }
 
     &__title {
         margin-bottom: 20px;
@@ -15,12 +41,14 @@
         font-weight: 700;
         text-transform: uppercase;
         color: @grey;
+
+        .md(margin-bottom, 12px);
+        .xs(margin-bottom, 16px);
     }
 
-    &__link {
+    &__text {
         font-size: 14px;
         color: @accent;
-        text-decoration: none;
     }
 
 }
