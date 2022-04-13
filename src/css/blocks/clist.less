@@ -8,6 +8,17 @@
         display: flex;
         justify-content: space-between;
 
+        .md-block({
+            padding-top: 15px;
+            padding-bottom: 30px;
+        });
+
+        .xs-block({
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        });
+
         &::before {
             display: block;
             position: absolute;
@@ -27,12 +38,26 @@
         font-family: 'Calibri';
         font-weight: 700;
         text-transform: uppercase;
-        max-width: 350px;
+        max-width: 33%;
+        // margin-bottom: 10px;
+
+        .md-block({
+            font-size: 20px;
+        });
+
+        .xs-block({
+            font-size: 16px;
+            max-width: 100%;
+        });
     }
 
     &__text {
         color: @grey;
         line-height: 32px;
-        max-width: 660px;
+        max-width: 60%;
+
+        .xs-block({
+            max-width: 100%;
+        });
     }
 }

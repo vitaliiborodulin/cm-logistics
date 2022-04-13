@@ -8,7 +8,21 @@
         align-items: center;
     }
 
+    &__logo {
+        margin-right: 10px;
+    }
+
+    .custom-logo {
+        .xs(display, none);
+    }
+
+    .custom-logo-mobile {
+        display: none;
+        .xs(display, block);
+    }
+
     .btn {
+        flex-shrink: 0;
         color: @white;
         text-decoration: none;
     }
