@@ -5,6 +5,8 @@
     padding: 12px 20px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
 
     &:hover, &:active, &:focus {
         background-color: #EF9F21;
@@ -24,4 +26,10 @@
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+.btn-submit {
+    width: 100%;
+    max-width: 360px;
+    .md(max-width, 320px);
 }

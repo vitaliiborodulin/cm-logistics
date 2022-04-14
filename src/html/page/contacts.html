@@ -1,20 +1,95 @@
 <section class="page__section contacts">
     <div class="container">
 
-        <div class="breadcrumbs">
-            <span>
-                <span><a href="index.html">Главная</a></span> / <span>Контакты</span>
-            </span>
-        </div>
+        <div class="contacts__content">
 
-        <div class="page__content">
-
+            <div class="breadcrumbs">
+                <span>
+                    <span><a href="index.html">Главная</a></span> / <span>Контакты</span>
+                </span>
+            </div>
+    
             <h1 class="section-title">Контакты</h1>
 
-
-
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <div class="contacts__title">Адрес электронный почты:</div>
+                    <div class="contacts__text">info@sm-logistics.ru </div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">Телефон:</div>
+                    <div class="contacts__text">8 (495) 269-28-48</div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">Полное наименование фирмы:</div>
+                    <div class="contacts__text">Общество с ограниченной ответственностью «Специализированная медицинская логистика»</div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">инн кпп</div>
+                    <div class="contacts__text">7724470236 / 773101001</div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">огрн:</div>
+                    <div class="contacts__text">1197746226259</div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">Фактический адрес:</div>
+                    <div class="contacts__text">121596, г. Москва, <br> 
+                        ул. Горбунова, дом 2, строение 3, офис А101.5</div>
+                </li>
+            </ul>
+    
+            <img src="img/contacts.jpg" alt="" width="1110" height="300">
 
         </div>
 
     </div>
+
+   <div class="contacts__form">
+        <div class="container">
+
+            <form action="#" class="form">
+                <div class="form__title text-black">Форма обратной связи</div>
+                <div class="form__top">
+            
+                    <div class="form__wrapper">
+                        <div class="form__inner">
+                            <label class="form__label" for="your-name">Имя *</label>
+                            <input class="form__input" type="text" name="your-name" id="your-name"
+                                placeholder="Укажите ваше имя" required>
+                        </div>
+                        <div class="form__inner">
+                            <label class="form__label" for="your-email">E-mail *</label>
+                            <input class="form__input" type="email" name="your-email" id="your-email"
+                                placeholder="Укажите почтовый ящик" required>
+                        </div>
+                        <div class="form__inner">
+                            <label class="form__label" for="your-tel">Телефон *</label>
+                            <input class="form__input" type="tel" name="your-tel" id="your-tel"
+                                placeholder="+7 (495) 495-49-49" required>
+                        </div>
+                    </div>
+            
+                    <div class="form__wrapper">
+                        <div class="form__inner">
+                            <label class="form__label" for="your-text">Сообщение</label>
+                            <textarea class="form__input" name="your-text" id="your-text"
+                                placeholder="Опишите суть вашей заявки"></textarea>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="form__bottom">
+                    <span class="form__agree">Нажимая на кнопку, Вы соглашаетесь с правилами обработки персональных
+                        данных</span>
+                    <input class="btn btn-submit" type="submit" value="Отправить заявку">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
 </section>

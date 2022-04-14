@@ -1,0 +1,29 @@
+.calert {
+    position: relative;
+    padding: 60px 160px 60px 100px;
+    background: radial-gradient(97% 337% at 88% 50%, #FF7A00 0%, #F49F19 35%, #F49F19 70%, #FF7A00 100%);
+    border-radius: 20px;
+
+    &::after {
+        position: absolute;
+        content: url(../img/alert.svg);
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__title {
+        .title(55px);
+        .title-under(100px, 6px, -15px, 5px);
+        margin-bottom: 60px;
+        color: @white;
+        
+        &::after {
+            background-color: @black;
+        };
+    }
+
+    &__text {
+        max-width: 650px;
+    }
+}
