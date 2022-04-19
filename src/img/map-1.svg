@@ -1,50 +1,16 @@
-<section class="page__section geo">
-
-    <div class="container">
-
-        <div class="breadcrumbs">
-            <span>
-                <span><a href="index.html">Главная</a></span> / <span>География</span>
-            </span>
-        </div>
-
-
-        <h1 class="section-title">География</h1>
-
-        <div class="ctext ctext__half">
-            <p>Ознакомьтесь с расположением наших региональных офисов и информацией о них:</p>
-        </div>
-    </div>
-
-    <div class="map">
-        <div class="container">
-            <ul class="map__list">
-                <li><a href="#moscow">Москва</a></li>
-                <li><a href="#rnd">Ростов-на-Дону</a></li>
-                <li><a href="#bal">Балашиха</a></li>
-                <li><a href="#elec">Елец</a></li>
-                <li><a href="#stavr">Ставрополь</a></li>
-                <li><a href="#ufa">Уфа</a></li>
-                <li><a href="#novosib">Новосибирск</a></li>
-                <li><a href="#che">Челябинск</a></li>
-            </ul>
-        </div>
-
-        <div class="container-fluid">
-            <div class="map__image">
-                <svg version="1.1" id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1100px"
+<svg version="1.1" id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1515 793" style="enable-background:new 0 0 1515 793;" xml:space="preserve">
 <style type="text/css">
 	.st0{clip-path:url(#SVGID_2_);}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#F3F3F3;stroke:#555555;}
 	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#F3F3F3;}
 	.st3{fill:none;stroke:#555555;}
-	.st4{fill:#9B9B9B;stroke:#555555}
+	.st4{fill:#CC9933;stroke:#555555;stroke-width:0.5;}
 	.st5{fill:#1E2024;}
 	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
-	.st7{mask:url(#path-87-inside-1_1104_6603_1_);fill-rule:evenodd;clip-rule:evenodd;fill:#9B9B9B;stroke:#555555;}
+	.st7{mask:url(#path-87-inside-1_1104_6603_1_);fill-rule:evenodd;clip-rule:evenodd;fill:#CC9933;stroke:#555555;}
 	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter_1_);}
-	.st9{mask:url(#path-91-inside-2_1104_6603_1_);fill-rule:evenodd;clip-rule:evenodd;fill:#9B9B9B;stroke:#555555;}
+	.st9{mask:url(#path-91-inside-2_1104_6603_1_);fill-rule:evenodd;clip-rule:evenodd;fill:#CC9933;stroke:#555555;}
 </style>
 <g>
 	<defs>
@@ -710,19 +676,3 @@
 	</g>
 </g>
 </svg>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="cmore">
-            <a href="avto.html" class="cmore__link">
-                <div class="cmore__title">Автопарк</div>
-                <div class="cmore__text">Смотреть дальше</div>
-            </a>
-        </div>
-    </div>
-   
-</section>

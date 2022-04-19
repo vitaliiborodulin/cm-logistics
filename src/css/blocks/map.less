@@ -1,0 +1,60 @@
+.map {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            margin-right: 20px;
+            margin-bottom: 20px;
+            font-family: 'Calibri';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            text-transform: uppercase;
+
+            color: @accent;
+            text-decoration: none;
+
+            .md(font-size, 16px);
+            .md(font-size, 14px);
+
+            &:hover, &:active, &:focus {
+                text-decoration: underline;
+            }
+        }
+
+        // a[href="#che"]:hover {
+        //     color: #f00;
+        //     fill: #CC9933;
+        // }
+    }
+
+    &__image {
+        overflow-x: auto;
+        text-align: center;
+        max-width: 100%;
+        .md(text-align, left);
+    }
+    .st4:hover {
+        cursor: pointer;
+        fill: #CC9933;
+        stroke: #1E2024;
+        stroke-width: 2px
+    }
+
+    .st7:hover {
+        cursor: pointer;
+        fill: #ff0;
+        stroke: #1E2024;
+        stroke-width: 2px
+    }
+
+    .st9:hover {
+        cursor: pointer;
+        fill: #f00;
+        stroke: #1E2024;
+        stroke-width: 2px
+    }
+}
