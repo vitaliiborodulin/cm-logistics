@@ -1,6 +1,27 @@
 .header {
-    padding: 20px 0;
+    // position: fixed;
+    //     width: 100%;
+    //     padding: 5px 0;
+    //     z-index: 9999;
+    //     background: #fff;
+    //     top: 0;
+
+    // padding: 20px 0;
+    background-color: @white;
     box-shadow: 0px 67px 266px rgba(4, 10, 30, 0.04), 0px 27.991px 111.128px rgba(4, 10, 30, 0.0287542), 0px 14.9653px 59.4146px rgba(4, 10, 30, 0.0238443), 0px 8.38944px 33.3073px rgba(4, 10, 30, 0.02), 0px 4.45557px 17.6893px rgba(4, 10, 30, 0.0161557), 0px 1.85406px 7.3609px rgba(4, 10, 30, 0.0112458);
+
+    &.sticky {
+        position: fixed;
+        width: 100%;
+        padding: 5px 0;
+        z-index: 9999;
+        background: #fff;
+        top: 0;
+    }
+
+    .md-block({
+        padding: 10px 0;
+    });
 
     &__content {
         display: flex;

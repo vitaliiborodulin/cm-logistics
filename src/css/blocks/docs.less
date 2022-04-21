@@ -20,7 +20,7 @@
         justify-content: space-between;
     }
 
-    &__title, &__img, &__list {
+    .div-title, &__img, &__list {
         .col();
         .size(6);
         .size-xs(12);
@@ -51,18 +51,8 @@
         }
     }
 
-    &__title {
-        margin-bottom: 20px;
-        .title(30px);
-        line-height: 130%;
-
-        .md-block({
-            .title(20px);
-        });
-
-        .xs-block({
-            .title(16px);
-        });
+    .div-title {
+        margin-bottom: 20px;  
     }
 
     &__item {

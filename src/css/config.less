@@ -52,6 +52,21 @@
     font-style: normal;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+// .overflow {
+//     position: relative;
+//     overflow-y: hidden;
+
+//     &::after {
+//         position: absolute;
+//         background-color: rgba(30, 32, 36, 0.5);
+//         z-index: 13;
+//     }
+// }
+
 body {
     font-family: @userfont;
     font-size: @fontsize;
@@ -61,7 +76,12 @@ body {
     font-weight: 400;
     color: @black;
     text-rendering: optimizeSpeed;
+    position: relative;
 }
+
+// main {
+//     padding-top: 100px;
+// }
 
 .bg-grey {
     background-color: @grey_light1;
@@ -88,4 +108,39 @@ body {
         .title(20px);
         .title-under(60px, 4px, -10px, 5px);
     })
+}
+
+.div-title {
+    .title(30px);
+    line-height: 130%;
+
+    .md-block({
+        .title(20px);
+    });
+
+    .xs-block({
+        .title(16px);
+    });
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+// Remove all mouse-triggered focus styles without breaking keyboard accessibility
+*:focus:not(:focus-visible) { 
+    outline: none !important; 
+}
+
+// fix safari
+input[type='submit'] { 
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none; 
 }
