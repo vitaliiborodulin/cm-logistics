@@ -90,7 +90,7 @@ $(function() {
     var cities = $('.map__list li');
     
     
-    cities.on('click', function(){
+    cities.on('mouseenter click', function(){
         var city = $(this).data('city');
         var region = $(this).data('region');
     
@@ -126,7 +126,7 @@ $(function() {
         
     });
     
-    regions.on('click', function(e){
+    regions.on('mouseenter click', function(e){
         var chooseReg = e.target.getAttribute('id');
     
         for(var i = 0; i < regions.length; i++){
@@ -157,4 +157,32 @@ $(function() {
     
         }
     });
+    
+    // cities.on('mouseleave', function(){
+    //     for(var i = 0; i < cities.length; i++){
+    //         cities[i].classList.remove('active');
+    //     }
+    
+    //     for(var i = 0; i < regions.length; i++){
+    //         regions[i].classList.remove('map__active');
+    //     }
+    
+    //     for(var i = 0; i < cards.length; i++){
+    //         cards[i].classList.remove('show');
+    //     }
+    // });
+    
+    // regions.on('mouseleave', function(){
+    //     for(var i = 0; i < cities.length; i++){
+    //         cities[i].classList.remove('active');
+    //     }
+    
+    //     for(var i = 0; i < regions.length; i++){
+    //         regions[i].classList.remove('map__active');
+    //     }
+    
+    //     for(var i = 0; i < cards.length; i++){
+    //         cards[i].classList.remove('show');
+    //     }
+    // });
 });
