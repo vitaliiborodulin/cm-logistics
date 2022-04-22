@@ -41,7 +41,7 @@ $(function() {
     var menuChildren = $('.menu-item-has-children');
     
     
-    $('.menu-item-has-children').on('click', function() {
+    menuChildren.on('click', function() {
         
         if ($(this).hasClass('active')){
             $(this).removeClass('active');
@@ -53,13 +53,15 @@ $(function() {
         // $(this).find('.sub-menu').toggleClass('open').slideToggle();
     });
     
-    // $(document).on('click', function (e) {
-    //     if (   !submenu.is(e.target)  && menuChildren.hasClass('active') ) {
-    //         submenu.toggleClass('open');
-    //         menuChildren.toggleClass('active');
-    //         console.log(1)
-    //     }
-    // });
+    $(document).on('click', function (e) {
+    
+        
+            if (   !$('.menu-item-has-children a').is(e.target) ){
+                    menuChildren.removeClass('active');
+                    submenu.removeClass('open').slideUp();
+            }
+    
+    });
     
     // !menuBtn.is(e.target) && && childMenu.has(e.target).length === 0
     
