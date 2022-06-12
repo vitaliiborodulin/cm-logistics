@@ -34,9 +34,9 @@ function styles() {
 		.pipe(less())
 		.pipe(gcmq())
 		.pipe(autoprefixer())
-		.pipe(gulpIf(isMinify, cleanCSS({
-			level: 2
-		})))
+		// .pipe(gulpIf(isMinify, cleanCSS({
+		// 	level: 2
+		// })))
 		.pipe(gulpIf(isMap, sourcemaps.write()))
 		.pipe(gulp.dest('./build/css'))
 		.pipe(gulpIf(isSync, browserSync.stream()));

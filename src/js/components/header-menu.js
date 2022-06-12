@@ -1,10 +1,12 @@
 const burger = $('.header__burger');
 const menu = $('.menu__wrapper');
+// const bg = $('.menu__outer');
 
 burger.on('click', function(e) {
     e.preventDefault();
     burger.toggleClass('header__burger--close');
     menu.toggleClass('open');
+    // bg.toggleClass('bg');
     // $('html, body').toggleClass('overflow');
 });
 

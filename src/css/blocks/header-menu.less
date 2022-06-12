@@ -127,6 +127,22 @@
         }
     }
 
+    // .menu__outer {
+    //     .md-block({
+    //         position        : absolute;
+    //         right           : 0;
+    //         top             : 0;
+    //         z-index         : 10;
+    //         width: 100%;
+    //         height: 100vh;
+    //         pointer-events: none;
+    //     })
+    // }
+    
+    // .menu__outer.bg {
+    //     background-color: rgba(30, 32, 36, 0.5);
+    // }
+
     .menu__wrapper {
         // position: relative;
         
@@ -142,11 +158,13 @@
             height: 100vh;
             background-color: rgba(30, 32, 36, 0.5);
         });
-
-    }
-
-    .menu__wrapper.open {
         
+
+        
+    }
+    
+    .menu__wrapper.open {
+
         .md(transform, translateX(0));
 
         .nav {
@@ -298,7 +316,7 @@
 //computer
 @media (hover: hover) and (pointer: fine) {
     .header .menu-item a {
-        .link-active();
+        .link-menu-active();
     }
 }
 

@@ -47,10 +47,16 @@
 
         &__list {
             a {
-                display: block;
+                display: inline-block;
                 padding: 7px 0;
+                padding-right: 14px;
                 font-size: 16px;
                 .link-active();
+
+                &:hover {
+                    background: url(../img/link-arrow.svg) no-repeat right center;
+                }
+
                 .md-block({
                     padding: 5px 0;
                     font-size: 14px;
@@ -74,6 +80,10 @@
             width: 25%;
             .md(width, 30%);
             .xs(width, 100%);
+
+            a:hover {
+                background: none;
+            }
         }
     }
 }
